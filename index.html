@@ -1,66 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Test Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        h1 {
-            color: #0056b3;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #218838;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Secure GitHub Page</title>
+  <!-- CSS (HTTPS link) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+    }
+    header {
+      background: #007acc;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    a {
+      color: #007acc;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Test Page!</h1>
-        <p>This is a simple HTML page for testing purposes. You can modify this content and see the changes in your browser.</p>
+  <header>
+    <h1>Welcome to My GitHub Page</h1>
+    <p>This site is secured with HTTPS!</p>
+  </header>
 
-        <h2>Basic Elements:</h2>
-        <ul>
-            <li><strong>Paragraph:</strong> This is a paragraph of text.</li>
-            <li><em>List Item 1</em></li>
-            <li>List Item 2</li>
-            <li><a href="https://www.example.com" target="_blank">A Link to Example.com</a></li>
-        </ul>
+  <main>
+    <h2>About This Page</h2>
+    <p>This is a simple HTML page hosted on GitHub Pages using HTTPS.</p>
 
-        <h2>Interactive Element:</h2>
-        <button onclick="alert('Button clicked!')">Click Me</button>
+    <!-- Image using HTTPS -->
+    <img src="https://via.placeholder.com/600x300" alt="Sample Image">
 
-        <p>Feel free to add more HTML elements like images, forms, or anything else you want to test!</p>
-    </div>
+    <h2>External Resources</h2>
+    <p>Visit <a href="https://github.com">GitHub</a> for more projects.</p>
 
+    <!-- JS from HTTPS source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        // You can add JavaScript here for more interactive testing
-        console.log("Page loaded successfully!");
+      $(document).ready(function() {
+        console.log("Secure JS loaded with HTTPS!");
+      });
     </script>
+  </main>
 </body>
 </html>
