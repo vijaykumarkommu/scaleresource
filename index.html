@@ -1,56 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Secure GitHub Page</title>
-  <!-- CSS (HTTPS link) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      line-height: 1.6;
-      background-color: #f0f0f0;
-    }
-    header {
-      background: #007acc;
-      color: white;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    a {
-      color: #007acc;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scale Resource</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This site is secured with HTTPS!</p>
+  <header class="navbar">
+
+    <nav class="nav-links">
+      
+      <a href="#services-section">Our Services</a>
+     
+      <a href="#">Contact Us</a>
+    </nav>
   </header>
 
-  <main>
-    <h2>About This Page</h2>
-    <p>This is a simple HTML page hosted on GitHub Pages using HTTPS.</p>
+  <section class="hero-section">
+  <!--  <img src="" alt="City Background" class="background-image" /> -->
+    <div class="hero-text-box">
+      <h1> Scale<br>Resource</h1>
+      <p>
+        <b>Who We Are:</b> Scale Resource is a full-service staffing and recruitment firm committed to delivering top-tier talent solutions across multiple industries.
+Mission: To fuel growth for organizations by connecting them with exceptional professionals—and to empower individuals by helping them find meaningful, fulfilling work.
+Core Values: Integrity, Speed, People-First, Diversity & Inclusion
 
-    <!-- Image using HTTPS -->
-    <img src="https://via.placeholder.com/600x300" alt="Sample Image">
+      </p>
+    </div>
+  </section>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-    <h2>External Resources</h2>
-    <p>Visit <a href="https://github.com">GitHub</a> for more projects.</p>
+body {
+  background: #fff;
+  color: #222;
+}
 
-    <!-- JS from HTTPS source -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        console.log("Secure JS loaded with HTTPS!");
-      });
-    </script>
-  </main>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  color: #0a145e;
+  border: 2px solid #0a145e;
+  padding: 4px 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0a145e;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.hero-section {
+  background: url('https://img.freepik.com/premium-photo/agency-uses-resumebased-interview-method-job-hiring-internet-recruitment-emphasizing-selection-process-identifying-suitable-candidates-positions_27634-1735.jpg') no-repeat center center/cover;
+
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text-box {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 40px;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.hero-text-box h1 {
+  font-size: 36px;
+  color: #1a2152;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.hero-text-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
+
+.services-section {
+  background-color: #16276c;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.services-section .intro {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #d0d0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.card {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #1a1a4e;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.card a {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+</style>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="services-section">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p class="intro">We specialize in connecting top talent with leading organizations through customized recruitment and staffing solutions. Our services are designed to meet the unique needs of your business and ensure the right fit, every time.</p>
+      <div class="cards">
+        <div class="card">
+          <h2>For Job Seekers</h2>
+          <p>Advance Your Career with Us: Explore curated job opportunities that match your skills, goals, and values.<br>
+Why Work With Scale Resource? Access to exclusive job openings, personalized recruiter support, resume and interview coaching.
+</p>
+          <a href="#"></a>
+        </div>
+        <div class="card">
+          <h2>Managed IT Services</h2>
+          <p>Your Talent Acquisition Partner: We simplify the hiring process by sourcing and delivering highly qualified candidates.<br>
+Services: Permanent Recruitment, Temporary Staffing, RPO, Project-Based Hiring<br>
+Industries: IT, Finance, Healthcare, Engineering, Support
+</p>
+          <a href="#"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- EmailJS library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("2pIp1Ze1rf-bqQfKD"); // Replace with your EmailJS public key
+  })();
+</script>
+
+<!-- Contact Form -->
+<section class="contact-container">
+  <h1>Contact Us</h1>
+  <form id="contact-form" class="contact-form">
+    <div class="name-row">
+      <div class="form-field">
+        <label>First Name *</label>
+        <input type="text" name="first_name" required placeholder="Enter your first name" />
+      </div>
+      <div class="form-field">
+        <label>Last Name *</label>
+        <input type="text" name="last_name" required placeholder="Enter your last name" />
+      </div>
+    </div>
+    <div class="form-field full">
+      <label>Email *</label>
+      <input type="email" name="email" required placeholder="example@mysite.com" />
+    </div>
+    <div class="form-field full">
+      <label>Message</label>
+      <textarea name="message" placeholder="Your message here..."></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- EmailJS form handling -->
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('service_i8tpsm7', 'template_9wl8xz4', this)
+    .then(function() {
+      alert('Message sent successfully!');
+    }, function(error) {
+      alert('Failed to send message: ' + JSON.stringify(error));
+    });
+});
+</script>
+
+  <footer class="footer">
+    <div class="footer-content">
+    
+    </div>
+  </footer>
+<style>
+  body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0b1b61;
+  color: white;
+}
+
+.contact-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+}
+
+.name-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus, textarea:focus {
+  border-bottom: 2px solid #fff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1em;
+  color: #0b1b61;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.footer {
+  background-color: #0b1b61;
+  padding: 30px 15px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+</style>
 </body>
 </html>
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+</body>
+</html>
+
